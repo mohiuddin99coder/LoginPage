@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Shah Faizan</h1>
+      <section class="home-container">
+        <button type="button" class="btn btn-join">Join</button>
+        <button type="button" class="btn btn-home-login">Login</button>
+      </section>
+      <section class="login-container hidden">
+        <h2>Shah Faizan</h2>
+        <form>
+          <div>
+            <label for="user-ID">Username:</label>
+            <input type="text" id="user-ID" placeholder="Username" />
+            <p class="message message-login">xyz</p>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" />
+            <p class="message message-login">xyz</p>
+          </div>
+          <button class="btn btn-login" type="button">Login</button>
+          <button class="forget" type="button">forget password?</button>
+          <button class="btn btn-signUp" type="button">Create account</button>
+        </form>
+      </section>
+
+      <section class="signUp-container hidden">
+        <h2>Shah Faizan</h2>
+        <h3>Create your account</h3>
+        <form class="signUp-form">
+          <input type="text" class="firstName" placeholder="First name" />
+          <input type="text" class="lastName" placeholder="Last name" />
+          <input type="text" class="username" placeholder="Username" />
+          <p class="message username-message"></p>
+          <input type="number" class="contact" placeholder="Mobile No." />
+          <input type="email" class="email" placeholder="E-mail" />
+          <p class="message email-message"></p>
+          <div class="gender">
+            <label for="sex" class="sex-label">Sex:</label>
+            <input type="radio" name="gender" value="male" />Male
+            <input type="radio" name="gender" value="female" />Female
+            <input type="radio" name="gender" value="others" />Others
+          </div>
+          <div>
+            <label for="country" class="country-label">Country:</label>
+            <select name="country" id="country">
+              <option value="">Select Country</option>
+              <option value="Aus">Australia</option>
+              <option value="Afgh">Afghanistan</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Canada">Canada</option>
+              <option value="China">China</option>
+              <option value="Denmark">Denmark</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Ind">India</option>
+              <option value="Italy">Italy</option>
+              <option value="Japan">Japan</option>
+              <option value="Neatherlands">Neatherlands</option>
+              <option value="Nz">New Zealand</option>
+              <option value="Russia">Russia</option>
+              <option value="Singapore">Singapore</option>
+              <option value="Spain">Spain</option>
+              <option value="UAE">United Arab Emirates</option>
+              <option value="US">United States</option>
+            </select>
+          </div>
+          <input type="password" class="password" placeholder="Password" />
+          <input type="password" class="confirm" placeholder="Confirm" />
+          <p class="message password-message"></p>
+          <input type="checkbox" onclick="showPassword()" class="show-password"/>Show Password
+          <button class="btn btn-signIn" type="button">Sign in instead</button>
+          <button class="btn btn-create" type="button">Create</button>
+        </form>
+      </section>
+      <div class="overlay"></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

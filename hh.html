@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Finding Charecter</title>
+    <body>
+      <center>
+        <table border="2" text="Black">
+          <tr>
+            <td>Enter a Sentence</td>
+            <td><input type="text" name="sentence" id="sentence" /></td>
+          </tr>
+          <tr>
+            <td>Enter a Letter</td>
+            <td>
+              <input type="text" name="letter" id="letter" maxlength="1" />
+            </td>
+          </tr>
+        </table>
+        <input
+          type="button"
+          name="Check"
+          value="Check"
+          onclick="check_letter()"
+        />
+        <script language="javascript">
+          function check_letter() {
+            var sentence = document.getElementById("sentence").value;
+            var letter = document.getElementById("letter").value;
+            var index = sentence.indexOf(letter);
+            if (index == -1) {
+              document.write(
+                "The Letter is Not Available in the given Sentence"
+              );
+            } else {
+              document.write(sentence.substring(index + 1));
+            }
+          }
+        </script>
+      </center>
+    </body>
+  </head>
+</html>
